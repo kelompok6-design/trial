@@ -1,0 +1,240 @@
+/* IMPORT FONT */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins', sans-serif;
+}
+
+body{
+    background: linear-gradient(135deg,#f8e8ff,#fff7d6);
+    color:#333;
+    min-height:100vh;
+}
+
+/* NAVBAR */
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 8%;
+    background:rgba(106, 13, 173, 0.95);
+    backdrop-filter:blur(10px);
+    position:sticky;
+    top:0;
+    z-index:1000;
+    box-shadow:0 4px 15px rgba(0,0,0,0.15);
+}
+
+.logo{
+    color:#ffd700;
+    font-size:1.7rem;
+    font-weight:700;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+    gap:25px;
+}
+
+nav a{
+    text-decoration:none;
+    color:white;
+    font-weight:500;
+    transition:0.3s;
+    padding:8px 15px;
+    border-radius:20px;
+}
+
+nav a:hover{
+    background:#ffd700;
+    color:#6a0dad;
+    transform:translateY(-2px);
+}
+
+/* HERO HOME */
+
+.hero{
+    text-align:center;
+    padding:80px 10%;
+}
+
+.hero h1{
+    font-size:3.5rem;
+    color:#6a0dad;
+    margin-bottom:20px;
+    animation:fadeDown 1s ease;
+}
+
+.hero p{
+    max-width:800px;
+    margin:auto;
+    line-height:1.8;
+    font-size:1.1rem;
+    margin-bottom:30px;
+}
+
+.hero button{
+    padding:14px 30px;
+    border:none;
+    border-radius:30px;
+    background:#ffd700;
+    color:#6a0dad;
+    font-weight:bold;
+    cursor:pointer;
+    transition:0.4s;
+}
+
+.hero button:hover{
+    transform:scale(1.08);
+    box-shadow:0 10px 25px rgba(255,215,0,0.4);
+}
+
+/* CONTAINER */
+
+.container{
+    padding:60px 8%;
+}
+
+.container h2{
+    text-align:center;
+    color:#6a0dad;
+    margin-bottom:40px;
+    font-size:2rem;
+}
+
+/* ANGGOTA */
+
+.anggota{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:25px;
+}
+
+/* CARD UMUM */
+
+.card{
+    background:white;
+    padding:25px;
+    border-radius:20px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.1);
+    transition:0.4s;
+    border-top:5px solid #ffd700;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 15px 35px rgba(106,13,173,0.25);
+}
+
+.card h3{
+    color:#6a0dad;
+    margin-bottom:10px;
+}
+
+.card p{
+    line-height:1.6;
+}
+
+/* PAGE DESAIN DAN PRODUK */
+
+.page{
+    padding:70px 10%;
+    text-align:center;
+}
+
+.page h1{
+    color:#6a0dad;
+    margin-bottom:30px;
+    font-size:2.5rem;
+}
+
+/* PRODUK */
+
+.produk-kosong{
+    font-size:1.2rem;
+    color:#666;
+    min-height:200px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background:linear-gradient(
+        135deg,
+        rgba(255,215,0,0.2),
+        rgba(106,13,173,0.1)
+    );
+}
+
+/* IFRAME CANVA */
+
+iframe{
+    border-radius:15px;
+}
+
+/* LINK CANVA */
+
+a{
+    color:#6a0dad;
+    font-weight:600;
+}
+
+a:hover{
+    color:#b8860b;
+}
+
+/* ANIMASI */
+
+@keyframes fadeDown{
+    from{
+        opacity:0;
+        transform:translateY(-40px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+/* SCROLL ANIMATION */
+
+.card{
+    animation:fadeUp 1s ease;
+}
+
+@keyframes fadeUp{
+    from{
+        opacity:0;
+        transform:translateY(40px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+/* RESPONSIVE */
+
+@media(max-width:768px){
+
+    nav{
+        flex-direction:column;
+        gap:15px;
+    }
+
+    nav ul{
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+
+    .hero h1{
+        font-size:2.3rem;
+    }
+
+    .page h1{
+        font-size:2rem;
+    }
+}
