@@ -238,3 +238,12 @@ a:hover{
         font-size:2rem;
     }
 }
+.music-box{
+    margin-top:50px;
+    text-align:center;
+}
+
+.music-box audio{
+    margin-top:15px;
+    width:300px;
+}
