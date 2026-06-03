@@ -8,8 +8,8 @@ function showInfo(){
 
 function showMember(nama){
     alert("Nama anggota: 
-          Aulia
-          Faeyza
-          Carissa
-          Kamila" + nama);
+          ⋆. 𐙚˚࿔ Aulia 𝜗𝜚˚⋆
+          ⋆. 𐙚˚࿔ Faeyza 𝜗𝜚˚⋆
+          ⋆. 𐙚˚࿔ Carissa 𝜗𝜚˚⋆
+          ⋆. 𐙚˚࿔ Kamila 𝜗𝜚˚⋆" + nama);
 }
