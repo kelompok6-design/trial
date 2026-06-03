@@ -7,9 +7,5 @@ function showInfo(){
 }
 
 function showMember(nama){
-
-    alert(
-        "Nama anggota: " + nama
-    );
-
+    alert("Nama anggota: " + nama);
 }
