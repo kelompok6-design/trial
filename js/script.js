@@ -1,16 +1,15 @@
 function showInfo(){
-    alert("Selamat datang di Sunpetal.cam! 🌻✨\nMari menjelajahi Sunpetal World kami.");
+
+    alert(
+        "Selamat datang di website Tangled Photobooth Project."
+    );
+
 }
 
-window.addEventListener("scroll", () => {
-    const cards = document.querySelectorAll(".card");
+function showMember(nama){
 
-    cards.forEach(card => {
-        const posisi = card.getBoundingClientRect().top;
+    alert(
+        "Nama anggota: " + nama
+    );
 
-        if(posisi < window.innerHeight - 100){
-            card.style.opacity = "1";
-            card.style.transform = "translateY(0)";
-        }
-    });
-});
+}
